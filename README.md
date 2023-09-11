@@ -67,3 +67,30 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
 > html의 태그가 있고 lang="en"이 있다. lang은 약어로 language를 의미하며 en은 english를 의미한다. html의 문서가 주로 어느 국가의 언어로 작성되어 있는지를 표현하는 것이다. lang과 같은 것들을 속성(Attributes)라고 하는데 나중에 자세히 다루겠다.
 > en이라고 해서 한글을 무조건 쓰지 않아야 되는 것은 아니다. 다만 웹 사이트 개발시 해당 사이트에 표현되는 언어를 선택하는 것은 웹 사이트 설계시 매우 기초적인 분기점이 된다. 유튜브 영상을 영어 콘텐츠로 만드는 것과 한국어 콘텐츠로 만드는 것과 노출수 자체가 다르기 때문에
 > 글로벌 서비스를 목적으로 한다면 여러가지 언어를 기반으로 만든 웹 사이트를 만드는 것이 가장 이상적이겠지만 그만큼 관리하는 사람도 필요하다.
+
+> 예시
+```
+lang="en-US"
+style="font-size: 10px;font-family: Roboto, Arial, sans-serif;"
+system-icons
+typography
+typography-spacing
+darker-dark-theme
+class="translated-ltr"
+```
+
+1.3.4 <head>는 무엇일까?
+
+```
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+```
+> head 태그를 설명하기전에 알아야 하는 것이 있다. 바로 html 태그는 최상위 태그라고 하며 루트라고도 한다. 이것을 이해하기 위해서 트리 구조라는 것을 알아야 하는데 자료구조라는 CS 지식이 바탕이 되어야 한다. https://yoongrammer.tistory.com/68
+> 쉽게 비유하면 크리스마스 트리처럼 맨 위는 별 하나가 있고 그 아래로 나눠지면서 여러가지 장식들을 배치한다. 물론 더 자세히 알아보고 싶다면 위 링크를 타고 들어가면 된다.
+> head 태그는 메타 데이터를 작성한다고 되어 있다. 재밌는 것은 <head>의 주 목적은 기계 처리를 위한 정보이고, 사람이 읽을 수 있는 정보가 아닙니다. 최상위 제목, 작성자 목록 등 사람에게 보여야 할 정보는 <header> 요소를 사용하세요. 라고 되어 있는데
+> title 태그는 웹 페이지의 탭에 있는 html 탭의 이름을 말하는 것이며 mdn 문서에는 없지만 favicon 이나 링크 북마크의 미리보기와 같은 것들을 보여주는 역할을 한다. 맨 초기에는 큰 생각을 하지 않는데 나중에 이 페이지의 링크를 타고 사용하는 사람들이 있기 때문에
+> 단순히 링크 주소뿐만 아니라 미리보기가 보여지는 점에서 고려해야할 요소이다.
+
